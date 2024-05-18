@@ -1,38 +1,72 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
   text-align: center;
+  background-color: #1b2034;
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 2rem auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+  appearance: none;
+  outline: none;
+  border: none;
+  background: #EEE;
+  position: relative;
+  width: calc(50% - 0.5rem); /* Adjust the width as needed */
+  max-width: 320px;
+  height: 35px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+margin-right: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button, a {
+  appearance: none;
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #2bcb4b;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 0rem;
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+button:hover ,a:hover{
+  background-color: #2bcb4b; /* Change background color on hover */
+  color: white; /* Change text color on hover */
 }
